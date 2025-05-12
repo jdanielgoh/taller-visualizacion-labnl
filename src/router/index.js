@@ -8,6 +8,11 @@ const router = createRouter({
       name: 'Red de contratos',
       component: () => import('../views/RedContratosView.vue'),
     },
+    {
+      path: '/whats',
+      name: 'Whats',
+      component: () => import('../views/WhatsFamiliarView.vue'),
+    },
   ],
 })
 

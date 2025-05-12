@@ -3,7 +3,7 @@ import { onMounted } from 'vue'
 import * as d3 from 'd3'
 
 import data_red from '@/assets/datos/contrataciones_abiertas_red.json'
-const tiempo_transicion = 300
+const tiempo_transicion = 50
 onMounted(() => {
   // Dimensiones del svg
   const ancho = 800,
@@ -74,10 +74,7 @@ onMounted(() => {
     .forceSimulation(data_red.nodes)
     .force(
       'link',
-      d3
-        .forceLink()
-        .id((d) => d.id)
-        .links(data_red.links),
+      d3.forceLink(data_red.links).id((d) => d.id),
     )
     .force('charge', d3.forceManyBody().strength(-30))
     .force(

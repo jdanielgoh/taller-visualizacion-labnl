@@ -13,11 +13,13 @@
   "dependencies": {
     "d3": "^7.9.0",
     "sass": "^1.86.3",
+    "three": "^0.176.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
+    "@rollup/plugin-dsv": "^3.0.5",
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/eslint-config-prettier": "^10.2.0",
     "eslint": "^9.22.0",
